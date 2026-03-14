@@ -346,6 +346,30 @@ input, textarea {
   box-shadow: var(--shadow);
 }
 
+.pricing-cards {
+  align-items: stretch;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-range {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--brand-strong);
+  margin: 0;
+}
+
+.price-card.featured {
+  border: 2px solid #90cbbb;
+  background: linear-gradient(165deg, #effff8, #f7fdff);
+  transform: scale(1.02);
+}
+
 .visit-card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
