@@ -169,6 +169,103 @@ input, textarea {
   word-break: break-all;
 }
 
+.hero-pro h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  max-width: 18ch;
+}
+
+.hero-metrics {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero-metrics span {
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  background: #eef7f3;
+  border: 1px solid #cfe6dd;
+  border-radius: 999px;
+}
+
+.proof-card {
+  border-left: 4px solid var(--brand);
+}
+
+.muted-center {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.trust-strip {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.logo-pill-row span {
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #40525d;
+}
+
+.section-alt {
+  background: #f2f6f9;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.chip-row {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip-row span {
+  font-size: 0.85rem;
+  border-radius: 999px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.quote p:first-child {
+  font-weight: 600;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.cta-band {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: linear-gradient(125deg, #e4fff5 0%, #e6f6ff 100%);
+  border: 1px solid #c8e6db;
+  border-radius: 18px;
+  padding: 22px;
+}
+
 .visit-card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
@@ -198,6 +295,7 @@ input, textarea {
 @media (max-width: 920px) {
   .hero-grid, .split, .cards { grid-template-columns: 1fr 1fr; }
   .ecard-layout { grid-template-columns: 1fr; }
+  .model-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 700px) {
@@ -218,6 +316,8 @@ input, textarea {
   .site-nav.open { display: flex; }
   .hero-grid, .split, .cards { grid-template-columns: 1fr; }
   .visit-card-grid { grid-template-columns: 1fr; }
+  .model-grid { grid-template-columns: 1fr; }
+  .cta-band { flex-direction: column; align-items: flex-start; }
 }
 
 @media print {
